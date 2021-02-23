@@ -32,8 +32,6 @@ public class PiApproximator {
 		int coordinatesOutsideCircle = 0;
 		double ratio = 0.0;										//points inside circle divided by total points
 		double piValue;											//calculated later (ratio * 4)
-		//FIXME: Delete this following variable
-		int numCoordinates = 0;
 		
 		/*Populate coordinate list*/
 		for(int i = 0; i < coordinateList.length; ++i) {
@@ -45,8 +43,6 @@ public class PiApproximator {
 			coordinateList[i][0] = randomXValue;
 			coordinateList[i][1] = randomYValue;
 			
-			//FIXME: Delete this following line
-			++numCoordinates;
 		}
 		
 		for(int i = 0; i < coordinateList.length; ++i) {
@@ -65,9 +61,6 @@ public class PiApproximator {
 		piValue = ratio * 4;
 		
 		System.out.println("PI VALUE:  " + piValue);
-		
-		//FIXME: Delete this following line
-		System.out.println("FIXME: value of numCoordinates = " + numCoordinates);
 
 	}
 }
